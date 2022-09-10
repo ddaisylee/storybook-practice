@@ -9,13 +9,13 @@ export default {
   component: Title,
   // 컴포넌트가 전달받는 argument의 종류와 타입
   argTypes: {
-    title: {control: "text"},
-    textColor: {control: "text"}
+    title: { control: "text" },
+    textColor: { control: "text" }
   }
 }
 
 // 템플릿을 생성해줍니다.
-const Template = (args)=> <Title {...args} />
+const Template = (args) => <Title {...args} />
 
 // 스토리를 하나 만듭니다. 이를 위해 템플릿과 bind한 다음 args를 전달해줍니다.
 // Function.prototype.bind(): 함수의 복사본을 만드는 메서드 -> 컴포넌트 또한 함수이기 때문에 bind로 생성
@@ -38,6 +38,6 @@ BlueTitle.args = {
 
 // bind -> args 전달 과정이 번거롭다면 템플릿을 활용하지 않고 스토리에 직접 args를 전달할 수도 있습니다.
 // storybook에서 직접 args의 값을 변경하면서 컴포넌트의 변화를 확인할 수 있습니다.
-export const StorybookTitle = (args)=>{
+export const StorybookTitle = (args) => {
   return <Title {...args} />
 }
