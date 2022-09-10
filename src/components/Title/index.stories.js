@@ -27,7 +27,7 @@ RedTitle.args = {
   textColor: "red"
 }
 
-// 비교를 위해 다른 스토리를 하나 더 만들어주었습니다.
+// 비교를 위해 다른 스토리를 하나 더 만들어주었습니다.  
 export const BlueTitle = Template.bind({});
 
 // 마찬가지로 생성한 스토리에 args를 전달합니다.
