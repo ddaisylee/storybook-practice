@@ -1,5 +1,5 @@
 // 스토리를 만들 컴포넌트를 불러옵니다.
-import Title from './Title';
+import Title from './index';
 
 // 문서화하는 컴포넌트에 대한 정보를 스토리북에게 알려주기 위해 export default합니다.
 export default {
